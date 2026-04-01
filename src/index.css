@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+
+  --color-manager-50: #f5f3ff;
+  --color-manager-100: #ede9fe;
+  --color-manager-500: #8b5cf6;
+  --color-manager-600: #7c3aed;
+  --color-manager-700: #6d28d9;
+
+  --color-employee-50: #f0fdf4;
+  --color-employee-100: #dcfce7;
+  --color-employee-500: #22c55e;
+  --color-employee-600: #16a34a;
+  --color-employee-700: #15803d;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fadeInSlideUp 0.3s ease-out forwards;
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
