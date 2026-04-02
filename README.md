@@ -1,16 +1,49 @@
-# React + Vite
+# HRIS Dashboard Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, completely custom frontend HRIS Dashboard designed and built for a mid-sized company.
 
-Currently, two official plugins are available:
+## 🚀 How to Run Locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+You will need [Node.js](https://nodejs.org/) installed on your machine.
 
-## React Compiler
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+3. Open your browser and navigate to the URL provided in the terminal (usually `http://localhost:5173`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎨 Features & Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This application was built primarily focusing on **clean frontend architecture, modern component design, and seamless user experience.** 
+
+### 1. Role-Based Views
+The authentication logic is mocked via a global React Context (`AuthContext`). Selecting a persona on the Login screen completely morphs the app's routing, layout priorities, and color-theming.
+- **HR Admin (Blue Theme)**: Prioritizes company-wide aggregate metrics and pending bottlenecks.
+- **Manager (Purple Theme)**: Prioritizes "My Team" statistics, current availability, and team performance blocks.
+- **Employee (Green Theme)**: A strictly self-service view focused on immediately accessing leave balances and recent payslips.
+
+### 2. Functional "Build It" Feature: Leave Management
+As requested to "Pick any ONE feature to build", the **Leave Management** module was wired as a fully interactive, stateful feature across the app using a global `DataContext`.
+- **The Workflow**: An Employee can log in and apply for a leave on the Leave Management page. If you then log out and log back in as an HR Admin or Manager, that specific leave request will immediately appear in your "Needs Attention" queue, where you can Approve or Reject it!
+
+### 3. Core Modules Included
+- **Leave Management**
+- **Employee Directory**
+- **Payroll**
+- **Performance Reviews**
+- **Recruitment**
+
+## 🛠 Tech Stack
+- **React 18** (Functional components & hooks)
+- **Vite** (Build tooling)
+- **Tailwind CSS v4** (Utility-first styling, CSS custom properties)
+- **Lucide React** (Crisp iconography)
+- **React Router DOM** (Client-side routing)
+
+*(For full design motivations and the written essays for Problem 1 and Problem 3, please review the `assignment_answers.md` file included in this directory!)*
