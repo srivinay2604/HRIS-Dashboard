@@ -39,3 +39,23 @@
 2. Implement a robust state management tool like Redux Toolkit or Zustand to handle complex data mutations across all modules instead of React Context.
 3. Add comprehensive unit testing (Jest/React Testing Library) and E2E tests (Cypress) to ensure the approval workflows function flawlessly.
 4. Improve accessibility (a11y) by adding proper ARIA labels and full keyboard navigation across all complex tables and forms.
+
+---
+
+## Problem 3: Who Are You Really?
+
+### Question 1: Something I believe strongly that most people disagree with
+One belief I strongly hold, which many people around me disagree with, is that entertainment in our younger years is just as important as work and studies. Most people see enjoyment as a distraction or even a waste of time, but I see it as essential for long-term growth.
+
+I believe this because constant pressure to only study or work leads to burnout, reduced creativity, and mental fatigue. Activities like sports, socializing, or hobbies actually improve focus, emotional stability, and problem-solving ability. In my experience, the people who balance both tend to perform better over time.
+
+Ignoring enjoyment in the name of discipline creates imbalance — not success. Sustainable success comes from knowing when to work hard and when to step back and recharge.
+
+### Question 2: Something fundamentally broken in daily life and how to fix it
+One thing I believe is fundamentally broken today is how gender equality is being discussed and practiced. Originally, gender equality meant equal opportunity, fairness, and respect regardless of gender. However, in many spaces today, it has shifted into promoting superiority, unrealistic expectations, or hostility between genders rather than balance.
+
+What’s wrong is not the idea itself, but how it is communicated. Social media amplifies extreme opinions because they get attention, which creates a distorted version of equality. This leads to confusion, division, and sometimes even resentment instead of mutual respect.
+
+If I were to redesign this from scratch, I would focus on three things. First, education systems should teach equality as responsibility and fairness, not as competition between genders. Second, public discourse should highlight real-life examples of collaboration and mutual respect rather than conflict. Third, platforms should encourage balanced conversations instead of rewarding extreme narratives.
+
+True gender equality should not feel like one side winning — it should feel like both sides progressing together.
